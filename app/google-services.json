@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "212105536254",
+    "firebase_url": "https://pop-free-emoji-texting.firebaseio.com",
+    "project_id": "pop-free-emoji-texting",
+    "storage_bucket": "pop-free-emoji-texting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212105536254:android:15b1e3a7b037640a",
+        "android_client_info": {
+          "package_name": "us.poptalks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212105536254-updl8he2bluf6k86nom2vt1575tgvmil.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "us.poptalks",
+            "certificate_hash": "f72089f3b1ce3eebb87e1ae16d1f44698a9bad0e"
+          }
+        },
+        {
+          "client_id": "212105536254-psh3ot5tt616flmm7805l4kpsg187omu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "us.poptalks",
+            "certificate_hash": "a99aba582b078670a06b16efeb3dc45e21d8b460"
+          }
+        },
+        {
+          "client_id": "212105536254-ed0i6o33j57g94ndvokq16dmvarlhp1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSqvKA5qHvEMDIxrp1Pwux5QEnk3aecZI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212105536254-rnnk8l4phc4jbb9og6e18ncr4blti4ns.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "us.poptalks"
+              }
+            },
+            {
+              "client_id": "212105536254-ed0i6o33j57g94ndvokq16dmvarlhp1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

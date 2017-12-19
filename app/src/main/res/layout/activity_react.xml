@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:camerakit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="us.poptalks.ui.Settings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.flurgle.camerakit.CameraView
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            camerakit:ckCropOutput="true"
+            camerakit:ckFacing="back"
+            camerakit:ckFlash="off"
+            camerakit:ckFocus="continuous"
+            camerakit:ckJpegQuality="100"
+            camerakit:ckMethod="standard"
+            camerakit:ckPermissions="strict"
+            camerakit:ckZoom="pinch" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/capture_layout"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/capture_emotion"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="32dp"
+            android:background="@drawable/ic_emotion_capture" />
+
+        <ImageButton
+            android:id="@+id/set_emotion"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="32dp"
+            android:visibility="gone"
+            android:background="@drawable/ic_send_custom" />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/status_layout"
+            android:padding="8dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/ReactLayoutStatusBarBackground"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Let POP detect your reaction by taking a snap!"
+
+                android:textAlignment="center"
+                android:id="@+id/snap_emotion_status"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/manual_emotion"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_above="@+id/capture_layout"
+            android:visibility="gone"
+            android:background="@color/ReactLayoutStatusBarBackground"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:id="@+id/manual_emotion_happiness"
+                    android:background="@mipmap/emotion_happiness"/>
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:id="@+id/manual_emotion_sad"
+                    android:background="@mipmap/emotion_sad"/>
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:id="@+id/manual_emotion_surprise"
+                    android:background="@mipmap/emotion_surprise"/>
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:id="@+id/manual_emotion_fear"
+                    android:background="@mipmap/emotion_fear"/>
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:id="@+id/manual_emotion_anger"
+                    android:background="@mipmap/emotion_anger"/>
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:id="@+id/manual_emotion_disgust"
+                    android:background="@mipmap/emotion_disgust"/>
+
+                <ImageButton
+                    android:id="@+id/re_capture_emotion"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:visibility="gone"
+                    android:background="@drawable/ic_re_capture" />
+
+                <!--<ImageButton-->
+                    <!--android:layout_width="32dp"-->
+                    <!--android:layout_height="32dp"-->
+                    <!--android:layout_margin="4dp"-->
+                    <!--android:id="@+id/manual_emotion_contempt"-->
+                    <!--android:background="@mipmap/emotion_contempt"/>-->
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set emotion manually"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="36dp"
+            android:id="@+id/preview_666"
+            android:layout_below="@+id/status_layout"
+            android:layout_above="@+id/capture_layout"
+            />
+
+        <com.skyfishjy.library.RippleBackground
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/emoji_animation_background"
+            android:layout_above="@+id/manual_emotion"
+            app:rb_color="@color/colorPrimaryDark"
+            app:rb_radius="32dp"
+            app:rb_rippleAmount="4"
+            app:rb_duration="3000"
+            android:visibility="gone"
+            app:rb_scale="6">
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/emotion_after_detection"
+                android:src="@mipmap/react_button"/>
+        </com.skyfishjy.library.RippleBackground>
+
+
+    </RelativeLayout>
+</LinearLayout>

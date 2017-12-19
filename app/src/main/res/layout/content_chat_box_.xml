@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="us.poptalks.ChatBox_"
+    tools:showIn="@layout/activity_chat_box_">
+
+
+    <RelativeLayout
+        android:id="@+id/content_main"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="us.poptalks.ui.ChatMessagesActivity"
+        tools:layout_editor_absoluteY="8dp"
+        >
+
+        <com.flurgle.camerakit.CameraView xmlns:camerakit="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/camera"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:adjustViewBounds="true"
+            camerakit:ckCropOutput="true"
+            camerakit:ckFacing="front"
+            camerakit:ckFlash="off"
+            camerakit:ckFocus="continuous"
+            camerakit:ckJpegQuality="100"
+            camerakit:ckMethod="standard"
+            camerakit:ckPermissions="strict"
+            camerakit:ckZoom="pinch" />
+
+
+    <ListView
+        android:id="@+id/messageListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        tools:listitem="@layout/message_item"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="8dp"
+        android:layout_above="@+id/linearLayout"
+        android:background="@drawable/background_chatbox_centered"
+        />
+
+        <ProgressBar
+            android:id="@+id/chatsendprogress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_above="@+id/linearLayout"
+            android:progress="75"
+
+            android:progressDrawable="@drawable/chatsendprogressbar"
+           />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            android:background="@drawable/edittexrroundedcorner_gray_chatbox"
+            >
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/recordVoiceButton"-->
+                <!--android:layout_width="24dp"-->
+                <!--android:layout_height="24dp"-->
+
+                <!--android:background="@drawable/ic_mic_black_24dp"-->
+
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:layout_marginLeft="12dp"-->
+                <!--android:layout_marginBottom="12dp"-->
+
+                <!--/>-->
+
+            <ImageButton
+                android:id="@+id/cameraPickerButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/ic_menu_camera" />
+            <ImageButton
+                android:id="@+id/photoPickerButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/ic_menu_gallery" />
+
+
+            <EditText
+                android:id="@+id/messageToSend"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:hint="Type message ..."
+                android:textColorHint="@color/smallTextColor"
+                android:background="@drawable/edittexrroundedcorner_gray"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@color/colorPrimary"
+
+
+                />
+
+            <ImageButton
+                android:id="@+id/sendButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_gravity="bottom"
+                android:background="@mipmap/ic_send_button"
+                android:onClick="sendMessage"
+                android:foregroundTint="@color/colorPrimary"
+                />
+
+
+        </LinearLayout>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imgFaceUser"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:srcCompat="@drawable/com_facebook_profile_picture_blank_square" />-->
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

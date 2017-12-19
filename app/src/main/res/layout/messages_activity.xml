@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="us.poptalks.ui.ChatMessagesActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="us.poptalks.ui.ChatMessagesActivity"
+        >
+
+        <com.flurgle.camerakit.CameraView xmlns:camerakit="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            camerakit:ckCropOutput="true"
+            camerakit:ckFacing="front"
+            camerakit:ckFlash="off"
+            camerakit:ckFocus="continuous"
+            camerakit:ckJpegQuality="100"
+            camerakit:ckMethod="standard"
+            camerakit:ckPermissions="strict"
+            camerakit:ckZoom="pinch" />
+
+        <ListView
+            android:id="@+id/messageListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout"
+            android:divider="@android:color/transparent"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+            tools:listitem="@layout/message_item" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/recordVoiceButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_mic_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/photoPickerButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_add_a_photo_black_24dp" />
+
+            <EditText
+                android:id="@+id/messageToSend"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/edittexrroundedcorner_gray"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/sendButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/ic_send_black_24dp"
+                android:onClick="sendMessage"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgFaceUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/com_facebook_profile_picture_blank_square" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+

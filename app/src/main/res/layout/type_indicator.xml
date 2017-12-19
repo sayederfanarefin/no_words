@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/type_indiator"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp">
+
+<!-- profile image -->
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/leftMessagePic"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_alignParentStart="true"
+    app:civ_border_width="2dp"
+    app:civ_border_color="@color/profilePictureBorder"
+    android:src="@mipmap/user"
+
+    />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/templeft"
+    android:layout_toEndOf="@id/leftMessagePic"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/senderTextViewleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="4sp"
+        android:textSize="12sp"
+        android:text="Sender"
+        />
+
+    <LinearLayout
+        android:id="@+id/individMessageLayoutLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/roundedmessages"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        >
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="visible"
+            app:indicatorName="BallPulseSyncIndicator"
+            app:indicatorColor="@color/colorPrimary"
+
+            />
+
+        <!--<TextView-->
+        <!--android:id="@+id/messageTextViewleft"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:maxWidth="200dp"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="normal|bold"-->
+        <!--tools:text="Message" />-->
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</RelativeLayout>

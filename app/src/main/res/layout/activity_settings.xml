@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="us.poptalks.ui.Settings">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settigns"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title"
+                android:textColor="@color/colorWhite"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Info"
+                android:layout_margin="8dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <!--edit profile -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/settings_edit_profile"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_margin="4dp"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_edit_profile"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Edit Profile"/>
+            </LinearLayout>
+
+            <!--my account -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/settings_my_account"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_margin="4dp"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/notification"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="My Account"/>
+            </LinearLayout>
+
+            <!--privacy-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/settings_privacy"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_margin="4dp"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_privacy"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Privacy"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="General Settings"
+                android:layout_margin="8dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <!--notifications-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/settings_notifications"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_margin="4dp"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/notification"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Notifications"/>
+            </LinearLayout>
+
+            <!-- Photos-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/settings_photos"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_margin="4dp"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_menu_gallery"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Photos"/>
+            </LinearLayout>
+
+            <!--chats and calls-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/settings_chats_and_calls"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_margin="4dp"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/message"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Chats and Calls"/>
+            </LinearLayout>
+            <!--friends-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/settings_friends"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_margin="4dp"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_friends_2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Friends"/>
+            </LinearLayout>
+            <!--timeline-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/settings_timeline"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_margin="4dp"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_timeline_2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Timeline"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="POP Info"
+                android:layout_margin="8dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <!--help-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/settings_help"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_margin="4dp"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_help"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Help"/>
+            </LinearLayout>
+
+            <!-- about-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/settings_about"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_margin="4dp"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_about"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="About"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

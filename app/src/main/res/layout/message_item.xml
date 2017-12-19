@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/messageLine"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <!-- profile image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/leftMessagePic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/profilePictureBorder"
+            android:src="@mipmap/user"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/templeft"
+            android:layout_toEndOf="@id/leftMessagePic"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/senderTextViewleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="4sp"
+                android:textSize="12sp"
+
+                tools:text="Sender"
+                />
+
+            <LinearLayout
+                android:id="@+id/individMessageLayoutLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/roundedmessages"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/imageMessageleft"
+                    android:layout_width="wrap_content"
+                    android:background="@color/textColorBlack"
+                    android:layout_height="128dp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/voiceMessageButtonleft"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/ic_mic_black_24dp"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/messageTextViewleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="200dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    tools:text="Message" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/emojiLeft"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toRightOf="@id/templeft"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="16sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeLeft"
+            android:layout_toRightOf="@id/templeft"
+            android:layout_alignBottom="@id/templeft"
+            android:text="11:00"
+            android:textSize="8sp"
+            />
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/rightMessagePic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/profilePictureBorder"
+            android:src="@mipmap/user"
+        android:visibility="gone"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempright"
+            android:layout_toStartOf="@id/rightMessagePic"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/senderTextViewright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textSize="12sp"
+                android:layout_margin="4sp"
+                android:textColor="@color/colorPrimary"
+        android:visibility="gone"
+                tools:text="Sender" />
+
+            <LinearLayout
+                    android:id="@+id/individMessageLayoutRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:visibility="gone"
+                    android:background="@drawable/roundedmessages"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageMessageright"
+                        android:layout_width="wrap_content"
+                        android:background="@color/textColorBlack"
+                        android:layout_height="128dp"
+                        android:visibility="gone"
+                        android:src="@mipmap/profile"/>
+
+                    <ImageButton
+                        android:id="@+id/voiceMessageButtonright"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/ic_mic_black_24dp"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/messageTextViewright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="200dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold"
+                        tools:text="Message"
+                        android:textColor="@color/colorWhite"/>
+
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/emojiRight"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_toLeftOf="@id/tempright"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_marginTop="16sp"
+                    android:visibility="gone"
+                    />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeRight"
+            android:layout_toStartOf="@id/tempright"
+            android:layout_alignBottom="@id/tempright"
+android:visibility="gone"
+            android:textSize="8sp"
+            android:text="11:00"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

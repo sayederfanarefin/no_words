@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:id="@+id/phone_search"
+                    android:background="@drawable/edittexrroundedcorner_gray_search_bar"
+                    android:drawableRight="@mipmap/search"
+                    android:hint="Enter your friend's Phone"
+                    android:textColorHint="@color/smallTextColor"
+                    android:inputType="phone"
+                    />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <ListView
+                android:id="@+id/firend_search_list_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorActivity"
+                android:stackFromBottom="false"
+                android:divider="@null"
+                android:dividerHeight="0px"
+                android:transcriptMode="alwaysScroll"
+                tools:listitem="@layout/friend_item" />
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/recent_chat_recyclerview"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

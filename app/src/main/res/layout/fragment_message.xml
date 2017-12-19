@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_chat_row"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/new_chat"
+                android:textColor="@color/colorPrimary"
+                android:textSize="7pt" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/message_container_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/message_profile_image_new_unread"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@mipmap/ic_jhon_smith" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txt_profile_name_new_unread"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:maxLines="1"
+                                android:text="John Smith"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_last_message_new_unread"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:maxLines="1"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            android:text="Good Day!"
+                            android:textColor="@color/smallTextColor" />
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_gravity="top|right"
+                                android:background="@color/colorPrimary"
+                                android:gravity="center"
+                                android:text="3"
+                                android:id="@+id/message_count_new_unread"
+                                android:textColor="@color/colorWhite" />
+
+                        </FrameLayout>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="@string/recent_chat"
+                android:textColor="@color/colorPrimary"
+                android:textSize="7pt" />
+
+            <ListView
+                android:id="@+id/chatListView666"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorActivity"
+                android:stackFromBottom="false"
+                android:divider="@null"
+                android:dividerHeight="0px"
+                android:transcriptMode="alwaysScroll"
+                tools:listitem="@layout/chat_item" />
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/recent_chat_recyclerview"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+        android:id="@+id/floating_new_message"
+        android:background="@mipmap/button_message">
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

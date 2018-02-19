@@ -18,9 +18,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.flurgle.camerakit.CameraKit;
-import com.flurgle.camerakit.CameraListener;
-import com.flurgle.camerakit.CameraView;
+import com.wonderkiln.camerakit.CameraKit;
+import com.wonderkiln.camerakit.CameraListener;
+import com.wonderkiln.camerakit.CameraView;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;

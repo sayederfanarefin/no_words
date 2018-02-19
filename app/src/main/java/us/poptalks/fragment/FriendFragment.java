@@ -252,6 +252,9 @@ View view_;
                     friendsListView.setAdapter(friendsListAdapter);
 
 
+                }else{
+                    empty_view_friendsList.setVisibility(View.VISIBLE);
+                    not_empty_friendsList.setVisibility(View.GONE);
                 }
 
 
@@ -319,10 +322,7 @@ View view_;
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
-            }else{
-                    empty_view_friendsList.setVisibility(View.VISIBLE);
-                    not_empty_friendsList.setVisibility(View.GONE);
-                }
+            }
             };
 
         mFriendsDatabaseReferenceCurrentUser.addValueEventListener(friendsListValueEventListener);

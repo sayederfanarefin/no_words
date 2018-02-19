@@ -70,9 +70,9 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
     //Glide transform
     // Firebase
     // FirebaseUI
@@ -118,7 +118,7 @@ dependencies {
     compile 'de.hdodenhof:circleimageview:2.1.0'
 
     //camera kit, most probably unused
-    compile 'com.flurgle:camerakit:0.9.17'
+    //compile 'com.flurgle:camerakit:0.9.17'
 
     compile 'com.fasterxml.jackson.core:jackson-databind:2.7.2'
     compile 'jp.wasabeef:glide-transformations:2.0.1'
@@ -157,8 +157,8 @@ dependencies {
 
 
 //test
-    androidTestCompile 'com.android.support.test.espresso:espresso-intents:3.+'
-    androidTestCompile 'com.android.support:support-annotations:26.0.0-alpha1'
+   // androidTestCompile 'com.android.support.test.espresso:espresso-intents:3.+'
+    //androidTestCompile 'com.android.support:support-annotations:26.0.0-alpha1'
 
     //butter knife
     compile 'com.jakewharton:butterknife:8.8.1'
@@ -171,7 +171,8 @@ dependencies {
     compile 'com.github.aakira:expandable-layout:1.6.0@aar'
 
     //camera kit
-    compile 'com.flurgle:camerakit:0.9.17'
+    //compile 'com.flurgle:camerakit:0.9.17'
+    compile 'com.wonderkiln:camerakit:0.11.1'
 
     //background animation for emoji
     compile 'com.skyfishjy.ripplebackground:library:1.0.1'
@@ -185,6 +186,6 @@ apply plugin: 'com.google.gms.google-services'
 repositories {
     maven { url 'https://jitpack.io' }
     maven {  url "https://maven.google.com" }
-   // maven { url 'https://maven.fabric.io/public' }
+    //maven { url 'https://maven.fabric.io/public' }
 }
 

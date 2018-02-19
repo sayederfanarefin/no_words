@@ -26,7 +26,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
-import com.flurgle.camerakit.CameraView;
+import com.wonderkiln.camerakit.CameraView;
 import com.github.aakira.expandablelayout.ExpandableLinearLayout;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;

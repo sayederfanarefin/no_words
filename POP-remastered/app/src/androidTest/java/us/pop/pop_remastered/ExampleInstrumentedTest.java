@@ -1,4 +1,4 @@
-package us.pop.pop_remastered;
+package info.sayederfanarefin.location_sharing.pop_remastered;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("us.pop.pop_remastered", appContext.getPackageName());
+        assertEquals("info.sayederfanarefin.location_sharing.pop_remastered", appContext.getPackageName());
     }
 }

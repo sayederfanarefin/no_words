@@ -18,7 +18,7 @@ android {
         exclude 'META-INF/LGPL2.1'
     }
     defaultConfig {
-        applicationId "us.poptalks"
+        applicationId "info.sayederfanarefin.location_sharing"
         minSdkVersion 19
         targetSdkVersion 26
         versionCode 1
@@ -28,9 +28,7 @@ android {
     }
     signingConfigs {
         release {
-            //  storeFile file('C:\\Users\\erfanarefin\\Desktop\\pop2.keystore.jks')
-             storeFile file('/home/erfan/Desktop/POP/pop2.keystore.jks')
-            //   storeFile file('/Users/tamzid/Desktop/POP/pop2.keystore.jks')
+             storeFile file('/Users/erfan/Desktop/popbackup/pop2.keystore.jks')
             keyAlias 'pop'
             keyPassword '123456'
             storePassword '123456'
@@ -38,9 +36,8 @@ android {
         debug {
             keyAlias 'pop'
             keyPassword '123456'
-            //         storeFile file('C:\\Users\\erfanarefin\\Desktop\\pop2.keystore.jks')
-             storeFile file('/home/erfan/Desktop/POP/pop2.keystore.jks')
-            //    storeFile file('/Users/tamzid/Desktop/POP/pop2.keystore.jks')
+             storeFile file('/Users/erfan/Desktop/popbackup/pop2.keystore.jks')
+
             storePassword '123456'
         }
     }

@@ -1,7 +1,5 @@
-package us.poptalks;
+package info.sayederfanarefin.location_sharing;
 
-import android.app.Instrumentation;
-import android.content.ComponentName;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.espresso.Espresso;
 import android.support.test.rule.ActivityTestRule;
@@ -12,9 +10,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import us.poptalks.authentication.LogInEmail;
-import us.poptalks.ui.FirstScreen;
-import us.poptalks.ui.SplashScreen;
+import info.sayederfanarefin.location_sharing.authentication.LogInEmail;
 
 import static android.support.test.InstrumentationRegistry.getTargetContext;
 import static android.support.test.espresso.Espresso.onView;
@@ -41,7 +37,7 @@ public class LogInInstrumentedTest {
 //        // Context of the app under test.
 //        Context appContext = InstrumentationRegistry.getTargetContext();
 //
-//        assertEquals("us.poptalks", appContext.getPackageName());
+//        assertEquals("info.sayederfanarefin.location_sharing", appContext.getPackageName());
 //    }
 
     @Rule

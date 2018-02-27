@@ -1,11 +1,11 @@
-package us.pop.pop_remastered.Adapters;
+package info.sayederfanarefin.location_sharing.pop_remastered.Adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import us.poptalks.fragment.InviteFriendsContactsFragment;
-import us.poptalks.fragment.InviteFriendsEmailFragment;
+import info.sayederfanarefin.location_sharing.fragment.InviteFriendsContactsFragment;
+import info.sayederfanarefin.location_sharing.fragment.InviteFriendsEmailFragment;
 
 
 /**

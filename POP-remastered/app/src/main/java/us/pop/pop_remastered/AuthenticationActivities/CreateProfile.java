@@ -1,4 +1,4 @@
-package us.pop.pop_remastered.AuthenticationActivities;
+package info.sayederfanarefin.location_sharing.pop_remastered.AuthenticationActivities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.hbb20.CountryCodePicker;
 
 import butterknife.BindView;
-import us.pop.pop_remastered.R;
+import info.sayederfanarefin.location_sharing.pop_remastered.R;
 
 public class CreateProfile extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package us.pop.pop_remastered.Utils;
+package info.sayederfanarefin.location_sharing.pop_remastered.Utils;
 
 /**
  * Created by schmaedech on 30/06/17.

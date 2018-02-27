@@ -1,4 +1,4 @@
-package us.pop.pop_remastered.Adapters;
+package info.sayederfanarefin.location_sharing.pop_remastered.Adapters;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,9 +14,9 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
-import us.poptalks.ChatBox_;
-import us.poptalks.R;
-import us.poptalks.model.ChatHeaderGroup;
+import info.sayederfanarefin.location_sharing.ChatBox_;
+import info.sayederfanarefin.location_sharing.R;
+import info.sayederfanarefin.location_sharing.model.ChatHeaderGroup;
 
 /**
  * Created by erfanarefin on 27/07/2017.

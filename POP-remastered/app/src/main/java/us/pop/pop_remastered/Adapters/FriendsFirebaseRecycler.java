@@ -1,4 +1,4 @@
-package us.pop.pop_remastered.Adapters;
+package info.sayederfanarefin.location_sharing.pop_remastered.Adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,11 +8,11 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import us.poptalks.R;
-import us.poptalks.model.friends;
-import us.poptalks.model.friends_recycler_view;
-import us.poptalks.model.timeline_header;
-import us.poptalks.model.timeline_post;
+import info.sayederfanarefin.location_sharing.R;
+import info.sayederfanarefin.location_sharing.model.friends;
+import info.sayederfanarefin.location_sharing.model.friends_recycler_view;
+import info.sayederfanarefin.location_sharing.model.timeline_header;
+import info.sayederfanarefin.location_sharing.model.timeline_post;
 
 /**
  * Created by erfan on 9/14/17.

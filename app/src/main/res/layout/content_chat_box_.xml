@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="us.poptalks.ChatBox_"
+    tools:context="info.sayederfanarefin.location_sharing.info.poptalks.ChatBox_"
     tools:showIn="@layout/activity_chat_box_">
 
 
@@ -18,7 +18,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="us.poptalks.ui.ChatMessagesActivity"
+        tools:context="info.sayederfanarefin.location_sharing.ui.ChatMessagesActivity"
         tools:layout_editor_absoluteY="8dp"
         >
 

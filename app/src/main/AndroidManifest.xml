@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="us.poptalks">
+    package="info.sayederfanarefin.location_sharing">
 
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -33,7 +33,7 @@
 
 
         <activity
-            android:name=".MainActivity"
+            android:name="info.sayederfanarefin.location_sharing.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
@@ -46,52 +46,52 @@
 
             </activity>
         <activity
-            android:name=".ui.FriendsListActivity"
+            android:name="info.sayederfanarefin.location_sharing.ui.FriendsListActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="Find Friends"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".ui.ProfileActivity"
+            android:name="info.sayederfanarefin.location_sharing.ui.ProfileActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
 
             android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="info.sayederfanarefin.location_sharing.MainActivity" >
                 <!-- The meta-data element is needed for versions lower than 4.1 -->
                 <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value=".MainActivity" />
+                    android:value="info.sayederfanarefin.location_sharing.MainActivity" />
         </activity>
 
         <activity
-            android:name=".ui.ProfileActivityFriend"
+            android:name="info.sayederfanarefin.location_sharing.ui.ProfileActivityFriend"
             android:configChanges="orientation|screenSize|keyboardHidden"
 
             android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="info.sayederfanarefin.location_sharing.MainActivity" >
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="info.sayederfanarefin.location_sharing.MainActivity" />
         </activity>
 
         <activity
-            android:name=".authentication.LogInEmail"
+            android:name="info.sayederfanarefin.location_sharing.authentication.LogInEmail"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".authentication.LoginPhone"
+            android:name="info.sayederfanarefin.location_sharing.authentication.LoginPhone"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".authentication.ForgotPassword"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity
-            android:name=".ui.MusicSettings"
+            android:name="info.sayederfanarefin.location_sharing.authentication.ForgotPassword"
             android:theme="@style/AppTheme.NoActionBar" />
 
+        <activity
+            android:name="info.sayederfanarefin.location_sharing.ui.MusicSettings"
+            android:theme="@style/AppTheme.NoActionBar" />
+
 
         <activity
-            android:name=".ui.SplashScreen"
+            android:name="info.sayederfanarefin.location_sharing.ui.SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -100,62 +100,62 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.FirstScreen"
+            android:name="info.sayederfanarefin.location_sharing.ui.FirstScreen"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".authentication.CreateProfile"
+            android:name="info.sayederfanarefin.location_sharing.authentication.CreateProfile"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".authentication.CreateProfileSmsSend"
+            android:name="info.sayederfanarefin.location_sharing.authentication.CreateProfileSmsSend"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".authentication.InputName"
+            android:name="info.sayederfanarefin.location_sharing.authentication.InputName"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.AddFriendActivity"
+            android:name="info.sayederfanarefin.location_sharing.ui.AddFriendActivity"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.Settings"
+            android:name="info.sayederfanarefin.location_sharing.ui.Settings"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.NotificationActivity"
+            android:name="info.sayederfanarefin.location_sharing.ui.NotificationActivity"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".NewChatActivity"
+            android:name="info.sayederfanarefin.location_sharing.NewChatActivity"
             android:label="@string/title_activity_chat_box2"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".NewGroupChatActivity"
+            android:name="info.sayederfanarefin.location_sharing.NewGroupChatActivity"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ChatBox_"
+            android:name="info.sayederfanarefin.location_sharing.ChatBox_"
             android:label="@string/title_activity_chat_box_"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
-            android:name=".EditMood"
+            android:name="info.sayederfanarefin.location_sharing.EditMood"
             android:label="Edit Mood"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name=".ui.QR_camera"
+            android:name="info.sayederfanarefin.location_sharing.ui.QR_camera"
             android:label="QR"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
-            android:name=".ui.ReactActivity"
+            android:name="info.sayederfanarefin.location_sharing.ui.ReactActivity"
             android:label="React"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
@@ -163,132 +163,132 @@
 
 
         <activity
-            android:name=".ui.My_QR"
+            android:name="info.sayederfanarefin.location_sharing.ui.My_QR"
             android:label="My QR Code"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
-            android:name=".ui.Friend_QR"
+            android:name="info.sayederfanarefin.location_sharing.ui.Friend_QR"
             android:label="User QR Code"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
-            android:name=".ui.My_phone"
+            android:name="info.sayederfanarefin.location_sharing.ui.My_phone"
             android:label="Registered Phone Number"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".ui.ProfileActivity" >
+            android:parentActivityName="info.sayederfanarefin.location_sharing.ui.ProfileActivity" >
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.ProfileActivity" />
+                android:value="info.sayederfanarefin.location_sharing.ui.ProfileActivity" />
         </activity>
         <activity
-            android:name=".ui.My_phone_change"
+            android:name="info.sayederfanarefin.location_sharing.ui.My_phone_change"
             android:label="Change Phone Number"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".ui.ProfileActivity" >
+            android:parentActivityName="info.sayederfanarefin.location_sharing.ui.ProfileActivity" >
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.ProfileActivity" />
+                android:value="info.sayederfanarefin.location_sharing.ui.ProfileActivity" />
         </activity>
         <activity
-            android:name=".ui.My_email_input"
+            android:name="info.sayederfanarefin.location_sharing.ui.My_email_input"
             android:label="Change Phone Number"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".ui.ProfileActivity" >
+            android:parentActivityName="info.sayederfanarefin.location_sharing.ui.ProfileActivity" >
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.ProfileActivity" />
+                android:value="info.sayederfanarefin.location_sharing.ui.ProfileActivity" />
         </activity>
         <activity
-            android:name=".ui.My_id"
+            android:name="info.sayederfanarefin.location_sharing.ui.My_id"
             android:label="My Id"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".ui.ProfileActivity" >
+            android:parentActivityName="info.sayederfanarefin.location_sharing.ui.ProfileActivity" >
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.ProfileActivity" />
+                android:value="info.sayederfanarefin.location_sharing.ui.ProfileActivity" />
         </activity>
         <activity
-            android:name=".authentication.LogInEmailChange"
+            android:name="info.sayederfanarefin.location_sharing.authentication.LogInEmailChange"
             android:label="Change or Add Email"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation|screenSize"
-            android:parentActivityName=".ui.ProfileActivity" >
+            android:parentActivityName="info.sayederfanarefin.location_sharing.ui.ProfileActivity" >
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.ProfileActivity" />
+                android:value="info.sayederfanarefin.location_sharing.ui.ProfileActivity" />
         </activity>
         <activity
-            android:name=".authentication.PasswordSet"
+            android:name="info.sayederfanarefin.location_sharing.authentication.PasswordSet"
             android:label="Change or Add Email"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation|screenSize"
-            android:parentActivityName=".ui.ProfileActivity" >
+            android:parentActivityName="info.sayederfanarefin.location_sharing.ui.ProfileActivity" >
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.ProfileActivity" />
+                android:value="info.sayederfanarefin.location_sharing.ui.ProfileActivity" />
         </activity>
         <activity
-            android:name=".authentication.ReLoginPhone"
+            android:name="info.sayederfanarefin.location_sharing.authentication.ReLoginPhone"
             android:label="Re Log In"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation|screenSize"
             />
 
         <activity
-            android:name=".ui.NewStatusActivity"
+            android:name="info.sayederfanarefin.location_sharing.ui.NewStatusActivity"
             android:label="New Status"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name=".Timleline_showlikes"
+            android:name="info.sayederfanarefin.location_sharing.Timleline_showlikes"
             android:label="Likes"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name=".ui.ViewImageActivity"
+            android:name="info.sayederfanarefin.location_sharing.ui.ViewImageActivity"
             android:label="View Image"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"/>
  <activity
-            android:name=".Timleline_showComments"
+            android:name="info.sayederfanarefin.location_sharing.Timleline_showComments"
             android:label="View Comments"
      android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
-             android:parentActivityName=".MainActivity" >
+             android:parentActivityName="info.sayederfanarefin.location_sharing.MainActivity" >
              <!-- The meta-data element is needed for versions lower than 4.1 -->
              <meta-data
                  android:name="android.support.PARENT_ACTIVITY"
-                 android:value=".MainActivity" />
+                 android:value="info.sayederfanarefin.location_sharing.MainActivity" />
          </activity>
 
         <activity
-            android:name=".ui.POstIMageComment"
+            android:name="info.sayederfanarefin.location_sharing.ui.POstIMageComment"
             android:label="View Comments"
             android:configChanges="orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="info.sayederfanarefin.location_sharing.MainActivity" >
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="info.sayederfanarefin.location_sharing.MainActivity" />
         </activity>
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="us.poptalks.provider"
+            android:authorities="info.sayederfanarefin.location_sharing.provider"
             android:exported="false"
             android:grantUriPermissions="true"
             tools:replace="android:authorities">

@@ -1,9 +1,9 @@
-package us.pop.pop_remastered.AuthenticationActivities;
+package info.sayederfanarefin.location_sharing.pop_remastered.AuthenticationActivities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import us.pop.pop_remastered.R;
+import info.sayederfanarefin.location_sharing.pop_remastered.R;
 
 public class CreateProfileSmsSend extends AppCompatActivity {
 

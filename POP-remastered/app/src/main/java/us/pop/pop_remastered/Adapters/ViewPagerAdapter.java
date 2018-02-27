@@ -1,13 +1,13 @@
-package us.pop.pop_remastered.Adapters;
+package info.sayederfanarefin.location_sharing.pop_remastered.Adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import us.poptalks.fragment.ChatFragment;
-import us.poptalks.fragment.FriendFragment;
-import us.poptalks.fragment.HistoryFragment;
-import us.poptalks.fragment.InfoFragment;
+import info.sayederfanarefin.location_sharing.fragment.ChatFragment;
+import info.sayederfanarefin.location_sharing.fragment.FriendFragment;
+import info.sayederfanarefin.location_sharing.fragment.HistoryFragment;
+import info.sayederfanarefin.location_sharing.fragment.InfoFragment;
 
 
 /**

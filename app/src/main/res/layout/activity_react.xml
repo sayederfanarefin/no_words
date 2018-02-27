@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical"
-    tools:context="us.poptalks.ui.Settings">
+    tools:context="info.sayederfanarefin.location_sharing.info.poptalks.ui.Settings">
 
     <RelativeLayout
         android:layout_width="match_parent"

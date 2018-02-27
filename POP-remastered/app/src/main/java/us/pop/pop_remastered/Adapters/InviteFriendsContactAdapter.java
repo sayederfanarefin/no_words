@@ -1,4 +1,4 @@
-package us.pop.pop_remastered.Adapters;
+package info.sayederfanarefin.location_sharing.pop_remastered.Adapters;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,9 +16,9 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import us.poptalks.R;
-import us.poptalks.model.invite_contacts;
-import us.poptalks.utils.CheeseFilter;
+import info.sayederfanarefin.location_sharing.R;
+import info.sayederfanarefin.location_sharing.model.invite_contacts;
+import info.sayederfanarefin.location_sharing.utils.CheeseFilter;
 
 /**
  * Created by erfanarefin on 27/07/2017.

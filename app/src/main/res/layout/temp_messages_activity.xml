@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     android:fitsSystemWindows="true"
-    tools:context="us.poptalks.ui.ChatMessagesActivity">
+    tools:context="info.sayederfanarefin.location_sharing.ui.ChatMessagesActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -41,7 +41,7 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="us.poptalks.ui.ChatMessagesActivity"
+        tools:context="info.sayederfanarefin.location_sharing.ui.ChatMessagesActivity"
         tools:showIn="@layout/activity_main">
 
         <com.flurgle.camerakit.CameraView xmlns:camerakit="http://schemas.android.com/apk/res-auto"

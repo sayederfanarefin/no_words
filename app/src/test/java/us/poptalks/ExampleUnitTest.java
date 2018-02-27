@@ -1,4 +1,4 @@
-package us.poptalks;
+package info.sayederfanarefin.location_sharing;
 
 import org.junit.Test;
 

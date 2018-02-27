@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="us.poptalks.ui.ChatActivity">
+    tools:context="info.sayederfanarefin.location_sharing.ui.ChatActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -63,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            tools:context="us.poptalks.MainChatActivity"
+            tools:context="info.sayederfanarefin.location_sharing.MainChatActivity"
             tools:showIn="@layout/activity_main">
 
             <TextView

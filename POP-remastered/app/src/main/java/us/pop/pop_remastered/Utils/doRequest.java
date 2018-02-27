@@ -1,4 +1,4 @@
-package us.pop.pop_remastered.Utils;
+package info.sayederfanarefin.location_sharing.pop_remastered.Utils;
 
 /**
  * Created by erfan on 9/18/17.

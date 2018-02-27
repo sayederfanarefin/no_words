@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="us.pop.pop_remastered.AuthenticationActivities.CreateProfileSmsSend">
+    tools:context="info.sayederfanarefin.location_sharing.pop_remastered.AuthenticationActivities.CreateProfileSmsSend">
 
 </android.support.constraint.ConstraintLayout>

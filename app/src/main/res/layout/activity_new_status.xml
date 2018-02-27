@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="us.poptalks.ui.NewStatusActivity">
+    tools:context="info.sayederfanarefin.location_sharing.info.poptalks.ui.NewStatusActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

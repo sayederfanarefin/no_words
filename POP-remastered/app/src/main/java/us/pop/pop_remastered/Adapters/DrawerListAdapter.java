@@ -1,4 +1,4 @@
-package us.pop.pop_remastered.Adapters;
+package info.sayederfanarefin.location_sharing.pop_remastered.Adapters;
 
 /**
  * Created by erfanarefin on 22/07/2017.
@@ -17,7 +17,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import us.poptalks.R;
+import info.sayederfanarefin.location_sharing.R;
 
 
 /**

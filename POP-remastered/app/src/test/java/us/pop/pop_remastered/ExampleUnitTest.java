@@ -1,4 +1,4 @@
-package us.pop.pop_remastered;
+package info.sayederfanarefin.location_sharing.pop_remastered;
 
 import org.junit.Test;
 

@@ -35,6 +35,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import info.sayederfanarefin.location_sharing.model.Chat;
+import info.sayederfanarefin.location_sharing.utils.Constants;
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
 import mabbas007.tagsedittext.TagsEditText;
 import info.sayederfanarefin.location_sharing.R;
@@ -72,11 +73,11 @@ public class NewGroupChatActivity extends AppCompatActivity implements TagsEditT
         search_bar.setThreshold(1);
 
 
-        mUserDatabaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://pop-free-emoji-texting.firebaseio.com/users");
+        mUserDatabaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl(Constants.FIREBASE_URL+ "/" + Constants.USERS_LOCATION);
 
 
 
-        mFriendsDatabaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://pop-free-emoji-texting.firebaseio.com/friends");
+        mFriendsDatabaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl(Constants.FIREBASE_URL+ "/" + Constants.FRIENDS_LOCATION);
         listView_id = (ListView) findViewById(R.id.firend_search_list_id);
 
 
@@ -400,7 +401,7 @@ public class NewGroupChatActivity extends AppCompatActivity implements TagsEditT
     private void afterChatKeyRetrival(final String chatKey, final List<String> added_users1,  List<String> added_users_name ){
         if(chatKey==null){
         //    // Log.v("=====xxx", "chatKeyNotFound ");
-            final DatabaseReference chatDbRef = FirebaseDatabase.getInstance().getReferenceFromUrl("https://pop-free-emoji-texting.firebaseio.com/chats");
+            final DatabaseReference chatDbRef = FirebaseDatabase.getInstance().getReferenceFromUrl(Constants.FIREBASE_URL+"/"+Constants.CHAT_LOCATION);
 
             final Chat c = new Chat(group_chat_name_builder(added_users_name), added_users1);
             final DatabaseReference pushRef = chatDbRef.push();
@@ -435,7 +436,7 @@ public class NewGroupChatActivity extends AppCompatActivity implements TagsEditT
             //getting the chat name
          //   // Log.v("=====xxx", "2 users chatKeyFound, opening next Activity"+ chatKey);
 
-            DatabaseReference chatDbRef2 = FirebaseDatabase.getInstance().getReferenceFromUrl("https://pop-free-emoji-texting.firebaseio.com/chats/"+chatKey);
+            DatabaseReference chatDbRef2 = FirebaseDatabase.getInstance().getReferenceFromUrl(Constants.FIREBASE_URL+"/"+Constants.CHAT_LOCATION+"/"+chatKey);
 
             Query q1 = chatDbRef2.child("chatName");
             q1.addListenerForSingleValueEvent(new ValueEventListener() {

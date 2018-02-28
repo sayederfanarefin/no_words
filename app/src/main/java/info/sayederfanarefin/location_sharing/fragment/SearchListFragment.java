@@ -38,6 +38,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 
+import info.sayederfanarefin.location_sharing.utils.Constants;
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
 import info.sayederfanarefin.location_sharing.R;
 
@@ -133,7 +134,7 @@ ListView listView_id;
             }
         };
 
-        mUserDatabaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://pop-free-emoji-texting.firebaseio.com/users");//FirebaseDatabase.getInstance().getReference().child(values.dbUserLocation).getDatabase().getReference();
+        mUserDatabaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl(Constants.FIREBASE_URL+"/"+ Constants.USERS_LOCATION);
 
         search_bar.addTextChangedListener(new TextWatcher() {
             @Override
@@ -223,7 +224,7 @@ ListView listView_id;
 
         //  Query queryRef = mUserDatabaseReference.orderByChild("uid").equalTo(currentUser.getUid());
 
-        mFriendsDatabaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://pop-free-emoji-texting.firebaseio.com/friends");//FirebaseDatabase.getInstance().getReference().child(values.dbUserLocation).getDatabase().getReference();
+        mFriendsDatabaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl(Constants.FIREBASE_URL+"/"+Constants.FRIENDS_LOCATION);//FirebaseDatabase.getInstance().getReference().child(values.dbUserLocation).getDatabase().getReference();
 
 
 

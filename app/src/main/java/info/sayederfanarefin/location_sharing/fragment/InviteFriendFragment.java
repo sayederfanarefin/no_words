@@ -19,6 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.lang.reflect.Field;
 
 import info.sayederfanarefin.location_sharing.R;
+import info.sayederfanarefin.location_sharing.utils.Constants;
 
 
 /**
@@ -87,7 +88,7 @@ public class InviteFriendFragment extends Fragment {
          currentUser = firebaseAuth.getCurrentUser();
         user_uid = currentUser.getUid();
 
-         userDatabase =  FirebaseDatabase.getInstance().getReferenceFromUrl("https://pop-free-emoji-texting.firebaseio.com/users");
+         userDatabase =  FirebaseDatabase.getInstance().getReferenceFromUrl(Constants.FIREBASE_URL+"/"+ Constants.USERS_LOCATION);
 
         buttonTopGroup.setOnClickListener(new View.OnClickListener() {
             @Override

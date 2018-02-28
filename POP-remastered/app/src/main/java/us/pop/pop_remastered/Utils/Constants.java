@@ -6,7 +6,7 @@ package info.sayederfanarefin.location_sharing.pop_remastered.Utils;
 public final class Constants {
 
     //Location of Firebase resources
-    public static final String FIREBASE_URL = "https://pop-free-emoji-texting.firebaseio.com";
+    public static final String FIREBASE_URL = "https://location-sharing-8df4f.firebaseio.com"; //https://pop-free-emoji-texting.firebaseio.com";
     public static final String USERS_LOCATION = "users";
     public static final String FRIENDS_LOCATION = "friends";
     public static final String CHAT_LOCATION = "chats";
